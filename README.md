@@ -1,8 +1,11 @@
 # Geometry Dash Difficulty Faces Set
 
-**Every possible combination of ratings, difficulties, coins, stars, moons, and lists, that could occur in Geometry Dash.**
+**Every combination of ratings, difficulties, coins, stars, moons, and lists, that could occur in Geometry Dash.**
 
 This repository contains an (almost) complete set of icons that represent Geometry Dash level and list ratings.
+
+You can use all of these icons by using ``https://autonick.github.io/diff-faces/`` and expanding it with the file structure below. For example, ``https://autonick.github.io/diff-faces/levels/mythic/extremeDemon/3v/10s.png``.
+
 All files are purposefully consistent in width and height. This allows them to be the exact same size if you were to embed them.
 Additionally, levels without a star value have their coins moved up to match what it would look like in-game.
 
