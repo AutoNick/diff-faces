@@ -3,83 +3,50 @@
 **Every possible combination of ratings, difficulties, coins, stars, moons, and lists, that could occur in Geometry Dash.**
 
 This repository contains an (almost) complete set of icons that represent Geometry Dash level and list ratings.
-All files are sorted into folders, so they should be somewhat easy to navigate and use.
+All files are purposefully consistent in width and height. This allows them to be the exact same size if you were to embed them.
+Additionally, levels without a star value have their coins moved up to match what it would look like in-game.
+
+Note that these are not exact matches of the in-game visuals. The difficulty text is omitted, and numbers are bigger for better readability.
 
 ## File Structure
 
-Icons are separated into two categories:
-
-* **Levels** - Icons with stars, moons, coins.
-* **Lists** - Icons with diamonds.
-
-## Levels
-
-### Naming Structure
+### Levels
 ```
-rating-type/difficulty/coins/rating.png
+levels/type/difficulty/coins/rating.png
 ```
 
-#### - **rating-type**
-`mythic`, `legendary`, `epic`, `feature`, `none`
+| Name | Description | Values | Note |
+|-|-|-|-|
+| type | The rating tier. | `mythic`, `legendary`, `epic`, `feature`, `none` | "none" refers to no glow ring.
+| difficulty | The difficulty face. | `na`, `auto`, `easy`, `normal`, `hard`, `harder`, `insane`, `easyDemon`, `mediumDemon`, `hardDemon`, `insaneDemon`, `extremeDemon` | 
+| coins | The coin amount. | `1u`, `2u`, `3u`, `1v`, `2v`, `3v`, `none` | "u" are unverified (bronze) coins, "v" are verified (silver) coins.
+| rating | The star or moon value. | `1s` … `10s`, `1m` … `10m`, `none` | "s" are stars, "m" are moons. 
 
-#### - **difficulty**
-`na`, `auto`, `easy`, `normal`, `hard`, `harder`, `insane`, `easyDemon`, `mediumDemon`, `hardDemon`, `insaneDemon`, `extremeDemon`
-
-#### - **coins**
-
-| Value            | Meaning                   |
-| ---------------- | ------------------------- |
-| `1u`, `2u`, `3u` | Unverified (bronze) coins |
-| `1v`, `2v`, `3v` | Verified (silver) coins   |
-| `none`           | No coins                  |
-
-#### - **stars/moons**
-
-Stars use `s`, moons use `m`.
-
-| Stars        | Moons        |
-| ------------ | ------------ |
-| `1s` … `10s` | `1m` … `10m` |
-| `none`       | `none`       |
-
-### **Example**
-
-**Mythic Extreme Demon** with **3 verified coins** and **10 stars**:
+**Example**: Mythic Extreme Demon with 3 verified coins and 10 stars
 
 ```
-mythic/extremeDemon/3v/10s.png
+levels/mythic/extremeDemon/3v/10s.png
 ```
 
 ![Example](levels/mythic/extremeDemon/3v/10s.png)
 
 ---
 
-## Lists
-
-### Naming Structure
+### Lists
 ```
-rating-type/difficulty/diamonds.png
+type/difficulty/diamonds.png
 ```
-#### **rating-type**
 
-Lists can **only** be `feature` (because non-featured lists cannot reward diamonds).
+| Name | Description | Values | Note |
+|-|-|-|-|
+| type | The rating tier. | `feature` | Lists can **only** be `feature` (because non-featured lists cannot reward diamonds).
+| difficulty | The difficulty face. | `na`, `auto`, `easy`, `normal`, `hard`, `harder`, `insane`, `easyDemon`, `mediumDemon`, `hardDemon`, `insaneDemon`, `extremeDemon` | 
+| diamonds | The diamond amount. | `5, 10, 15, …, 95, 99` | These are the only existing diamond ratings as of right now, this might change in the future.
 
-| Value     | Meaning       |
-| --------- | ------------- |
-| `feature` | Featured list |
-
-#### **difficulty**
-`na`, `auto`, `easy`, `normal`, `hard`, `harder`, `insane`, `easyDemon`, `mediumDemon`, `hardDemon`, `insaneDemon`, `extremeDemon`
-
-#### **diamonds**
-`5, 10, 15, …, 95, 99`
-
-### **Example (List)**
-
-Featured NA list with **50 diamonds**:
+**Example:** Featured NA list with 50 diamonds
 
 ```
-feature/na/50.png
+lists/feature/na/50.png
 ```
 
 ![Example](lists/feature/na/50.png)
